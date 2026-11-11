@@ -4,7 +4,6 @@ import react from '@astrojs/react';
 import tailwindcss from '@tailwindcss/vite';
 import cloudflare from '@astrojs/cloudflare';
 
-// https://astro.build/config
 export default defineConfig({
   integrations: [react()],
   adapter: cloudflare(),
@@ -17,7 +16,7 @@ export default defineConfig({
     {
       provider: fontProviders.google(),
       name: 'Inter',
-      cssVariable: '--font-inter',
+      cssVariable: '--font-special',
       weights: [400, 700],
       styles: ['normal'],
     },
