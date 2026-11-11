@@ -1,6 +1,7 @@
 allowBuilds:
-  esbuild: false
-  workerd: false
+  esbuild: true
+  sharp: true
+  workerd: true
 minimumReleaseAgeExclude:
   - astro@7.4.8
   - '@astrojs/react@7.1.5'
