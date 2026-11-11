@@ -1,0 +1,7 @@
+---
+interface Props {
+classname?: string;
+}
+const { classname } = Astro.props;
+---
+<footer class={`${classname} flex h-12 w-full`}></footer>

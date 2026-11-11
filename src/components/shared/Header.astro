@@ -1,0 +1,12 @@
+---
+import Rutas from '../Rutas.astro';
+import {rutas} from "../../config";
+interface Props {
+classname?: string;
+}
+const { classname } = Astro.props;
+const pathActual = Astro.url.pathname;
+---
+<header class={`${classname} flex h-12 w-full`}>
+<Rutas {rutas} {pathActual} />
+</header>

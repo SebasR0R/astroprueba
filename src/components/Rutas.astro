@@ -1,0 +1,17 @@
+---
+import type { Ruta } from '../config';
+
+interface Props {
+rutas: Ruta[];
+pathActual: string;
+}
+
+const { rutas, pathActual } = Astro.props;
+---
+<nav class="flex gap-4 items-center px-4">
+{rutas.map((ruta) => (
+<a href={ruta.path} class={pathActual === ruta.path ? "font-bold underline" : ""}>
+{ruta.nombre}
+</a>
+))}
+</nav>

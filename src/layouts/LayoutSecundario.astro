@@ -1,0 +1,16 @@
+---
+import '../styles/global.css';
+import Layout from './Layout.astro';
+import Footer from '../components/shared/Footer.astro';
+import Header from '../components/shared/Header.astro';
+interface Props {
+titulo: string;
+classname?: string;
+}
+const { titulo, classname } = Astro.props;
+---
+<Layout titulo={titulo}>
+<Header slot="header" classname={classname}/>
+<slot name="main" />
+<Footer slot="footer" classname={classname}/>
+</Layout>

@@ -1,0 +1,12 @@
+---
+export const prerender = false;
+import LayoutSecundario from '../layouts/LayoutSecundario.astro';
+import { sleep } from '../lib/sleep.ts';
+
+await sleep(1000);
+---
+
+<LayoutSecundario titulo="Secundaria" classname="bg-indigo-200">
+  <main class="flex flex-1 items-center justify-center" slot="main">
+  </main>
+</LayoutSecundario>
