@@ -11,6 +11,7 @@ const { titulo } = Astro.props;
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>{titulo}</title>
+<Font cssVariable="--font-special" preload />
 </head>
 <body class="flex">
 <slot name="header" />
