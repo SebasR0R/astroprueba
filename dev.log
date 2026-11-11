@@ -25,3 +25,10 @@ $ astro dev
 10:39:55 [vite] 16:39:55 [200] /_server-islands/Contenido 1040ms
 10:39:58 [vite] 16:39:58 [200] /secundario 1032ms
 10:39:59 [vite] 16:39:59 [200] /formulario 30ms
+10:43:02 Configuration file updated. Restarting...
+10:43:02 [@astrojs/cloudflare] Enabling image processing with Cloudflare Images for production with the "IMAGES" Images binding.
+10:43:02 [@astrojs/cloudflare] Enabling sessions with Cloudflare KV with the "SESSION" KV binding.
+10:43:02 [watch] /src/styles/global.css
+10:43:02 [vite] connected.
+10:43:04 [vite] server restarted.
+10:43:05 [vite] 16:43:05 [200] /secundario 1082ms
